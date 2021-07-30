@@ -1,0 +1,39 @@
+footer{
+    background-color: #777;
+    padding:10px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+div{
+    color: orange;
+}
+
+header{
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.bdiv{
+    padding-top: 30px;
+}
+
+.hpad{
+    padding-top: 20px;
+}
+
+.fpad{
+    padding-top: 30px;
+}
