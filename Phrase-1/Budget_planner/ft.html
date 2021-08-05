@@ -15,44 +15,21 @@
                 border: solid;
             }
         </style>
+        <script src="getData.js"></script>
     </head>
-    <body>
-        <div class="container text-center position alert alert-primary">
-            <h1>Add New Budget</h1>
+    <body onload="displayT()">
+        <div class="container text-center position alert alert-dark">
+            <h1>Finance Teams</h1>
+            <h3>Annual Budget</h3>
 
-           <form action="/action_page.php">
-                <div class="form-group">
-                    <label for="email">Client Name:</label>
-                    <input type="email" class="form-control" placeholder="Client Name" id="cn">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Project Name:</label>
-                    <input type="password" class="form-control" placeholder="Project Name" id="pn">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Budget:</label>
-                    <input type="password" class="form-control" placeholder="Budget" id="bgt">
-                </div>
-                
-                <div class="row">
-                    <div class="col-6">
-                        <button type="submit" class="btn btn-primary">Add</button> 
-                    </div> 
-                    <div class="col-6">
-                        <button type="submit" class="btn btn-danger">Clear</button> 
-                    </div> 
-
-                    <div class="col-2">
-                        <button type="submit" class="btn btn-secondary">Back</button> 
-                    </div> 
-                </div>
-            </form>
-            
+            <div id="main" class="container">
+             
+            </div>
+            <div class="col-2">
+                <a href="home.html">Back</a> 
+            </div> 
         </div>
-
-        
-
-        
+       
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
