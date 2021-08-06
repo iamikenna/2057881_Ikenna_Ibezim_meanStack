@@ -32,7 +32,6 @@ function setD(){
 	localStorage.setItem("data", JSON.stringify(map1))
 }
 
-
 function displayT(){
 	let getObj = localStorage.getItem("data");
 	let getJson = JSON.parse(getObj);
@@ -45,13 +44,10 @@ function displayT(){
         var pTage = "<p class='card-text'>"+value["article"]+"</p>"
         var img1 = "<img class='card-img-bottom' src="+value["image"]+" alt='Card image' style='width:100%'>"
         var data_card = "<div class='col-4'>"+card+pTage+img1+"</div></div> </div>"
+       
         count+= 1;
 
-        if (count == 1){
-            temp_col += data_card
-
-        }
-        else if(count == 2){
+        if(count < 3){
             temp_col += data_card
         }
         else if(count == 3){
@@ -59,7 +55,6 @@ function displayT(){
             count = 0 
             total_rows += "<div class='row'>"+temp_col+"</div>"
             temp_col = ""
-
         }
 	}
     document.getElementById("main").innerHTML=total_rows;
