@@ -16,7 +16,7 @@ function saveData(title: string, amount: number): void {
 
     let getObj = localStorage.getItem("data");
 	let getJson = JSON.parse(getObj);
-    
+
     var map1 = JSON.parse(localStorage.getItem("data"))
     document.getElementById("cartInfo").innerHTML= "Cart Size: "+map1["count"]+"";
 }
@@ -43,4 +43,9 @@ function dTable(): void{
 
     tableContent = startTable+tableContent+endTable
     document.getElementById("main").innerHTML=tableContent;
+}
+
+//Function used to clear the local session
+function clearSession(): void {
+    localStorage.clear();
 }

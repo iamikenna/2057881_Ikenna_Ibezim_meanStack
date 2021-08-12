@@ -34,3 +34,7 @@ function dTable() {
     tableContent = startTable + tableContent + endTable;
     document.getElementById("main").innerHTML = tableContent;
 }
+//Function used to clear the local session
+function clearSession() {
+    localStorage.clear();
+}
