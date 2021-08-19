@@ -14,8 +14,8 @@ export class AppComponent implements OnInit{
   displayedColumns: string[] = ['id', 'name', 'task', 'date'];
   newTaskList: MatTableDataSource<Task2>;
   newT: Task2[] = [
-    {id: "1", name: 'Hydrogen', task: "1.0079", date: 'H'},
-    {id: "2", name: 'Helium', task: "4.0026", date: 'He'}
+    {id: "1", name: 'Hydrogen', task: "1.0079", date: 'Wed Aug 11 2021 00:00:00 GMT-0400 (Eastern Daylight Time)'},
+    {id: "2", name: 'Helium', task: "4.0026", date: 'Wed Aug 11 2021 00:00:00 GMT-0400 (Eastern Daylight Time)'}
   ];
 
   constructor(){
