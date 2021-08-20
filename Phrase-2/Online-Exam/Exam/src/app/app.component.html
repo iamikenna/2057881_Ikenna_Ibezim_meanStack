@@ -1,0 +1,141 @@
+<div class="jumbotron">
+  <h1>Online Test Application</h1>
+  <p>Note: Pass(>= 70%) and Fail (<= 50%)</p>
+  <br><br><br>
+
+  <form [formGroup] = "form">
+
+    <p>1. What is the Sum of 5 + 5?</p>
+    <label>
+      <input type="radio"  value="5 one5" formControlName="one">
+        <span id="one5">5</span>
+        <br>
+      <input type="radio" value="10 one10" formControlName="one">
+        <span id="one10">10</span>
+        <br>
+      <input type="radio" value="55 one55" formControlName="one">
+        <span id="one55">55</span>
+        <br>
+    </label>
+    <p>2. What is the Sum of 10 + 5?</p>
+    <label>
+      <input type="radio" value="5 two5" formControlName="two">
+        <span id="two5">5</span>
+        <br>
+     
+      <input type="radio" value="15 two15" formControlName="two">
+        <span id="two15">15</span>
+        <br>
+     
+      <input type="radio" value="55 two55" formControlName="two">
+        <span id="two55">55</span>
+        <br>
+    </label>
+
+    <p>3. What is the Sum of 50 + 5?</p>
+    <label>
+      <input type="radio" value="5 three5" formControlName="three">
+        <span id="three5">5</span>
+        <br>
+      <input type="radio" value="10 three10" formControlName="three">
+        <span id="three10">10</span>
+        <br>
+     
+      <input type="radio" value="55 three55" formControlName="three">
+        <span id="three55">55</span>
+      <br>
+    </label>
+
+    <p>4. What is the Sum of 40 + 5?</p>
+    <label>
+      <input type="radio" value="5 four5" formControlName="four">
+        <span id="four5">5</span>
+        <br>
+      <input type="radio" value="45 four45" formControlName="four">
+        <span id="four45">45</span>
+        <br>
+      <input type="radio" value="55 four55" formControlName="four">
+        <span id="four55">55</span>
+        <br>
+    </label>
+    <p>5. What is the Sum of 90 + 5?</p>
+    <label>
+      <input type="radio" value="95 five95" formControlName="five">
+        <span id="five95">95</span>
+        <br>
+      <input type="radio" value="10 five10" formControlName="five">
+        <span id="five10">10</span>
+        <br>
+      <input type="radio" value="55 five55" formControlName="five">
+        <span id="five55">55</span>
+        <br>
+    </label> 
+    <p>6. What is the Sum of 12 + 5?</p>
+    <label>
+      <input type="radio" value="5 six5" formControlName="six">
+        <span id="six5">5</span>
+        <br>
+      <input type="radio" value="17 six17" formControlName="six">
+        <span id="six17">17</span>
+        <br>
+      <input type="radio" value="55 six55" formControlName="six">
+        <span id="six55">55</span>
+        <br>
+    </label>
+    <p>7. What is the Sum of 3 + 5?</p>
+    <label>
+      <input type="radio" value="8 seven8" formControlName="seven">
+        <span id="seven8">8</span>
+        <br>
+      <input type="radio" value="10 seven10" formControlName="seven">
+        <span id="seven10">10</span>
+        <br>
+      <input type="radio" value="55 seven55" formControlName="seven">
+        <span id="seven55">55</span>
+        <br>
+    </label>
+    <p>8. What is the Sum of 1 + 5?</p>
+    <label>
+      <input type="radio" value="5 eight5" formControlName="eight">
+        <span id="eight5">5</span>
+        <br>
+      <input type="radio" value="10 eight10" formControlName="eight">
+        <span id="eight10">10</span>
+        <br>
+      <input type="radio" value="6 eight6" formControlName="eight">
+        <span id="eight6">6</span>
+        <br>
+    </label>
+    <p>9. What is the Sum of 50 + 6?</p>
+    <label>
+      <input type="radio" value="5 nine5" formControlName="nine">
+        <span id="nine5">5</span>
+        <br>
+      <input type="radio" value="10 nine10" formControlName="nine">
+        <span id="nine10">10</span>
+        <br>
+      <input type="radio" value="56 nine56" formControlName="nine">
+        <span id="nine56">56</span>
+        <br>
+    </label>
+    <p>10. What is the Sum of 50 + 4?</p>
+    <label>
+      <input type="radio" value="5 ten5" formControlName="ten">
+        <span id="ten5">5</span>
+        <br>
+      <input type="radio" value="10 ten10" formControlName="ten">
+        <span id="ten10">10</span>
+        <br>
+      <input type="radio" value="54 ten54" formControlName="ten">
+        <span id="ten54">54</span>
+        <br>
+    </label>
+    <br><br>
+    <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+  </form>
+
+  <div id="result">
+    
+
+  </div>
+</div>
